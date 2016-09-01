@@ -6,8 +6,6 @@
 	<p>new navbar</p>
 @endsection
 
-@yield('name')
-
 @section('content')
 	<p>this is Home Page</p>
 	<p>System: <b>{{ $system }}</b></p>
