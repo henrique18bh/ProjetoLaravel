@@ -15,8 +15,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $system = 'KynouApp';
-        return view('home', compact('system'));
+        $users = array(
+            ["Name" => "Eric"],
+            ["Name" => "John"],
+            ["Name" => "Willian"],
+            ["Name" => "Mark"]);
+
+        $cars = [];
+        return view('home', compact('users','cars'));
     }
 
     /**
