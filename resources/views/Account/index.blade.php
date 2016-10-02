@@ -1,6 +1,6 @@
 @extends('layout.master')
 @section('title', 'Account')
 
-@section('content')
+@section('content') 
 
 @endsection
