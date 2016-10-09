@@ -3,4 +3,8 @@
 
 @section('content')
 
+{{ $account }}
+
+<br> {{ $list}}
+
 @endsection

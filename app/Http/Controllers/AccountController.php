@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use App\Account;
+
 class AccountController extends Controller
 {
     /**
@@ -15,7 +17,10 @@ class AccountController extends Controller
      */
     public function index()
     {
-        return view('account.index');
+        $model = new Account;
+        $account = $model->GetAccount();
+        $list = Account::ListAccount();
+        return view('Account.index', compact('account','list'));
     }
 
     /**
