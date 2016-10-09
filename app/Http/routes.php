@@ -48,5 +48,5 @@ Route::get('/administration', 'Administration\UserController@index');
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/account',['account'=>'AccountController@Index','as'=>'account']);
+Route::get('/account',['uses'=>'AccountController@index','as'=>'account']);
 
